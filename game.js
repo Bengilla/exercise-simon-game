@@ -10,7 +10,6 @@ $(document).keypress(function() {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
-    console.log(gamePattern);
   }
 });
 
@@ -20,7 +19,6 @@ $(".btn").click(function() {
   userClickedPattern.push(userChosenColour);
   playSound(userChosenColour);
   animatePress(userChosenColour);
-  console.log("User: " + userClickedPattern);
   checkAnswer(userClickedPattern.length - 1);
 });
 
